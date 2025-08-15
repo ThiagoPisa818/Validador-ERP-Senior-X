@@ -272,7 +272,7 @@ export default function ValidadorSeniorX() {
 
     try {
       // Load SheetJS library dynamically
-      const XLSX = await import("https://cdn.sheetjs.com/xlsx-0.20.1/package/xlsx.mjs")
+      const XLSX = await import("xlsx")
 
       const selectedTypeData = SPREADSHEET_TYPES.find((t) => t.value === selectedType)
       const filename = selectedTypeData?.displayName || selectedType
